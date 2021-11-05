@@ -14,5 +14,5 @@ Funcionalidades:
 #
 
 - Projeto Será desenvolvido em React em modelo single page application
-- Repositórios front-end e back-end separados - cosntrução
+- Repositórios front-end e back-end separados - construção
 
