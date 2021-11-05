@@ -1,6 +1,5 @@
 # Projeto Desafio ToDoList - Trybe
 
-#
 
 ## REQUISITOS:
 
