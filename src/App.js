@@ -1,15 +1,19 @@
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login'
+
+// função fetch/ conexão com o banco realizada aqui?
 
 function App() {
   return (
     <div className="App">
-      <header className="headerList">
-        <p>Lista de tarefas</p>
-      </header>
-      <div className="taskList">
-        <p> FUNÇÃO QUE RENDERIZA DADOS PERCORRIDOS</p>
-        <p> RENDERIZAÇÃO DE COMPONENTES COM INFOS PROPS.CHILDREN </p>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={ Login } />
+          <Route exact path="/home" component={ Home }/>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
@@ -23,7 +27,7 @@ export default App;
 // o sort opicional na renderização vai ocorrer conforme tags
 // tags como atributos (?)
 // taks's como componentes recebendo a lista por props.children
-
+// header recebe dados do usuário pelo login
 
 // REQUISITOS:
 //Funcionalidades:
